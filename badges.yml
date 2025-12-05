@@ -1,0 +1,22 @@
+badges:
+  - name: Build Status
+    imageUrl: https://img.shields.io/github/workflow/status/chirag127/ClimaCast-RealTime-Weather-Mobile-App/CI_CD.yml?style=flat-square&label=Build
+    markdown: "[![Build Status](https://img.shields.io/github/workflow/status/chirag127/ClimaCast-RealTime-Weather-Mobile-App/CI_CD.yml?style=flat-square&label=Build)](https://github.com/chirag127/ClimaCast-RealTime-Weather-Mobile-App/actions/workflows/ci.yml)"
+  - name: Code Coverage
+    imageUrl: https://img.shields.io/codecov/c/github/chirag127/ClimaCast-RealTime-Weather-Mobile-App?style=flat-square
+    markdown: "[![Code Coverage](https://img.shields.io/codecov/c/github/chirag127/ClimaCast-RealTime-Weather-Mobile-App?style=flat-square)](https://codecov.io/gh/chirag127/ClimaCast-RealTime-Weather-Mobile-App)"
+  - name: Language
+    imageUrl: https://img.shields.io/github/languages/top/chirag127/ClimaCast-RealTime-Weather-Mobile-App?style=flat-square
+    markdown: "[![Primary Language](https://img.shields.io/github/languages/top/chirag127/ClimaCast-RealTime-Weather-Mobile-App?style=flat-square)](https://github.com/chirag127/ClimaCast-RealTime-Weather-Mobile-App)"
+  - name: TypeScript Strictness
+    imageUrl: https://img.shields.io/badge/TypeScript-Strict-blue?style=flat-square
+    markdown: "[![TypeScript Strict](https://img.shields.io/badge/TypeScript-Strict-blue?style=flat-square)](https://www.typescriptlang.org/tsconfig#strict)"
+  - name: Frameworks
+    imageUrl: https://img.shields.io/badge/React%20Native%20-%20Expo-686795?style=flat-square
+    markdown: "[![Framework](https://img.shields.io/badge/React%20Native%20-%20Expo-686795?style=flat-square)]()"
+  - name: License
+    imageUrl: https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey?style=flat-square
+    markdown: "[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey?style=flat-square)](https://creativecommons.org/licenses/by-nc/4.0/)"
+  - name: GitHub Stars
+    imageUrl: https://img.shields.io/github/stars/chirag127/ClimaCast-RealTime-Weather-Mobile-App?style=flat-square
+    markdown: "[![GitHub Stars](https://img.shields.io/github/stars/chirag127/ClimaCast-RealTime-Weather-Mobile-App?style=flat-square)](https://github.com/chirag127/ClimaCast-RealTime-Weather-Mobile-App)"
