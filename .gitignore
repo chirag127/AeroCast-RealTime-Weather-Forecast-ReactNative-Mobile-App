@@ -1,36 +1,81 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# Node.js modules
 node_modules/
 
-# Expo
+# Expo-specific files
 .expo/
-dist/
+.easrc.json
+eas.json
 web-build/
-expo-env.d.ts
 
-# Native
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
+# Build artifacts
+build/
+dist/
+*.apk
+*.ipa
+*.d.ts
 
-# Metro
-.metro-health-check*
+# Dependency management
+yarn-error.log
+package-lock.json
 
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
+# Fastlane files
+fastlane/
 
-# macOS
+# OS generated files
 .DS_Store
-*.pem
+Thumbs.db
 
-# local env files
-.env*.local
+# Visual Studio Code files
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
 
-# typescript
-*.tsbuildinfo
+# IntelliJ files
+*.iml
+.idea/
+
+# Android files
+android/local.properties
+android/key.properties
+
+# iOS files
+ios/Podfile.lock
+ios/Pods/
+ios/build/
+
+# Environment variables
+.env
+*.env.local
+*.env.*
+!*.env.example
+
+# Expo cache
+metro.config.js
+metro.config.json
+
+# Temporary files
+*.tmp
+*~
+tmp/
+temp/
+
+# Log files
+*.log
+
+# Certificate
+*.cer
+*.p12
+*.p8
+
+# Compiled files
+*.js.map
+*.map
+
+# Cache directories
+.eslintcache
+.jest/
+
+#Ignore files that are created during development
+*.orig
