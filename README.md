@@ -1,207 +1,143 @@
-# ApexWeather-Mobile-CrossPlatform-WeatherApp
+# AeroCast-Weather-Forecast-ReactNative-Mobile-App
 
-[![Build Status](https://img.shields.io/github/actions/workflow/user/chirag127/ApexWeather-Mobile-CrossPlatform-WeatherApp/ci.yml?style=flat-square)](https://github.com/chirag127/ApexWeather-Mobile-CrossPlatform-WeatherApp/actions/workflows/ci.yml)
-[![Code Coverage](https://img.shields.io/codecov/c/github/chirag127/ApexWeather-Mobile-CrossPlatform-WeatherApp?style=flat-square)](https://codecov.io/gh/chirag127/ApexWeather-Mobile-CrossPlatform-WeatherApp)
-[![Tech Stack](https://img.shields.io/badge/Tech%20Stack-React%20Native%20%7C%20Expo%20%7C%20JavaScript-blue?style=flat-square)](https://reactnative.dev/)
-[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgray?style=flat-square)](https://creativecommons.org/licenses/by-nc/4.0/)
-[![GitHub Stars](https://img.shields.io/github/stars/chirag127/ApexWeather-Mobile-CrossPlatform-WeatherApp?style=flat-square)](https://github.com/chirag127/ApexWeather-Mobile-CrossPlatform-WeatherApp/stargazers)
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/chirag127/ApexWeather-Mobile-CrossPlatform-WeatherApp/main/assets/logo.png" alt="ApexWeather Logo" width="200">
-</div>
-
-### Get Real-Time Weather Insights on Your Mobile Device.
-
-ApexWeather is a cutting-edge, cross-platform mobile weather application meticulously crafted with React Native and Expo, delivering live weather data and comprehensive forecasts directly to your fingertips.
-
-[![Star ⭐ this Repo](https://img.shields.io/github/forks/chirag127/ApexWeather-Mobile-CrossPlatform-WeatherApp?label=Star&message=ThisRepo&color=yellow&style=social)](https://github.com/chirag127/ApexWeather-Mobile-CrossPlatform-WeatherApp/fork)
-
----
-
-## 🚀 Architecture Overview
-
-mermaid
-graph TD
-    A[User Interface (React Native/Expo)] --> B(Weather Data Service);
-    B --> C{External Weather API};
-    A --> D(Location Services);
-    D --> B;
-    style A fill:#f9f,stroke:#333,stroke-width:2px;
-    style B fill:#ccf,stroke:#333,stroke-width:2px;
-    style C fill:#ff9,stroke:#333,stroke-width:2px;
-    style D fill:#9cf,stroke:#333,stroke-width:2px;
+[![Build Status](https://img.shields.io/github/actions/workflow/status/chirag127/AeroCast-Weather-Forecast-ReactNative-Mobile-App/ci.yml?branch=main&style=flat-square)](https://github.com/chirag127/AeroCast-Weather-Forecast-ReactNative-Mobile-App/actions/workflows/ci.yml)
+[![License](https://img.shields.io/github/license/chirag127/AeroCast-Weather-Forecast-ReactNative-Mobile-App?style=flat-square)](https://github.com/chirag127/AeroCast-Weather-Forecast-ReactNative-Mobile-App/blob/main/LICENSE)
+[![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellow.svg?style=flat-square)](https://www.javascript.com/)
+[![ReactNative](https://img.shields.io/badge/Framework-ReactNative-blue.svg?style=flat-square)](https://reactnative.dev/)
+[![Expo](https://img.shields.io/badge/Platform-Expo-lightgrey.svg?style=flat-square)](https://expo.dev/)
+[![GitHub Stars](https://img.shields.io/github/stars/chirag127/AeroCast-Weather-Forecast-ReactNative-Mobile-App?style=flat-square)](https://github.com/chirag127/AeroCast-Weather-Forecast-ReactNative-Mobile-App/stargazers)
 
 
----
+Real-time weather forecasts at your fingertips. AeroCast delivers dynamic visuals and location-based meteorological data optimized for iOS & Android.
 
-## 📜 Table of Contents
+## Table of Contents
 
-*   [Features](#features)
-*   [Getting Started](#getting-started)
-*   [Development](#development)
-*   [Contributing](#contributing)
-*   [License](#license)
-*   [About The Author](#about-the-author)
-*   [🤖 AI Agent Directives](#🤖-ai-agent-directives)
+- [Overview](#overview)
+- [Features](#features)
+- [Architecture](#architecture)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [AI Agent Directives](#ai-agent-directives)
 
----
+## Overview
 
-## ✨ Features
+AeroCast is a cross-platform mobile application built using React Native and Expo, providing users with up-to-date weather information. With a focus on intuitive UI/UX and performance, AeroCast offers a seamless experience for accessing weather forecasts on both iOS and Android devices.
 
-*   **Real-Time Weather Data:** Access up-to-the-minute temperature, humidity, wind speed, and more.
-*   **Comprehensive Forecasts:** View hourly and daily weather predictions.
-*   **Location-Aware:** Automatically detects your location or allows manual search.
-*   **Cross-Platform Compatibility:** Runs seamlessly on both iOS and Android devices.
-*   **Intuitive UI:** Clean and user-friendly interface designed for ease of use.
+## Features
 
----
+-   **Real-time Weather Data:** Accurate and current weather information.
+-   **Location-Based Forecasts:** Weather data tailored to the user's current location.
+-   **Dynamic Visuals:** Engaging and informative weather visualizations.
+-   **Cross-Platform Compatibility:** Optimized for both iOS and Android.
+-   **Intuitive UI/UX:** User-friendly interface for easy navigation.
 
-## 🛠️ Getting Started
+## Architecture
+
+
+├── App.js                # Main application component
+├── components/
+│   ├── WeatherCard.js      # Displays weather information
+│   └── Location.js         # Handles location services
+├── screens/
+│   ├── HomeScreen.js       # Main screen of the app
+│   └── SettingsScreen.js   # App settings
+├── utils/
+│   ├── api.js            # API calls to weather services
+│   └── helpers.js        # Helper functions
+├── assets/
+│   ├── icons/            # Weather icons
+│   └── fonts/            # Custom fonts
+├── app.json              # Expo configuration file
+└── ...
+
+
+## Getting Started
 
 ### Prerequisites
 
-*   Node.js (v18+ recommended)
-*   npm or Yarn
-*   Expo CLI (`npm install -g expo-cli`)
+-   Node.js (version 18 or higher)
+-   npm or yarn
+-   Expo CLI (`npm install -g expo-cli`)
 
 ### Installation
 
-1.  **Clone the Repository:**
+1.  Clone the repository:
+
     bash
-    git clone https://github.com/chirag127/ApexWeather-Mobile-CrossPlatform-WeatherApp.git
-    cd ApexWeather-Mobile-CrossPlatform-WeatherApp
+    git clone https://github.com/chirag127/AeroCast-Weather-Forecast-ReactNative-Mobile-App.git
+    cd AeroCast-Weather-Forecast-ReactNative-Mobile-App
     
 
-2.  **Install Dependencies:**
+2.  Install dependencies:
+
     bash
     npm install
     # or
     yarn install
     
 
----
+## Usage
 
-## ⚙️ Development
+1.  Start the Expo development server:
 
-### Running the App
-
-*   **Start the development server:**
     bash
     npm start
     # or
     yarn start
     
 
-*   **Run on devices/simulators:**
-    *   Scan the QR code with the Expo Go app on your iOS or Android device.
-    *   Press `i` to run on an iOS simulator.
-    *   Press `a` to run on an Android emulator.
+2.  Scan the QR code with the Expo Go app (available on iOS and Android) to run the application on your mobile device or emulator.
 
-### Project Structure
+## Contributing
 
+Contributions are welcome! Please read the [contributing guidelines](https://github.com/chirag127/AeroCast-Weather-Forecast-ReactNative-Mobile-App/blob/main/.github/CONTRIBUTING.md) before submitting a pull request.
 
-ApexWeather-Mobile-CrossPlatform-WeatherApp/
-├── assets/
-├── components/
-├── constants/
-├── hooks/
-├── navigation/
-├── screens/
-├── services/
-├── utils/
-├── App.js
-├── app.json
-└── package.json
+## License
 
+This project is licensed under the [CC BY-NC 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/).
 
-### Scripts
-
-| Script      | Description                                  |
-| :---------- | :------------------------------------------- |
-| `npm start` | Starts the Expo development server.          |
-| `npm test`  | Runs unit tests with Jest and React Native Testing Library. |
-| `npm run lint` | Lints the codebase using ESLint.             |
-| `npm run format` | Formats the codebase using Prettier.       |
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please read our [CONTRIBUTING.md](https://github.com/chirag127/ApexWeather-Mobile-CrossPlatform-WeatherApp/blob/main/.github/CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
-
----
-
-## ⚖️ License
-
-This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)**. See the [LICENSE](https://github.com/chirag127/ApexWeather-Mobile-CrossPlatform-WeatherApp/blob/main/LICENSE) file for more details.
-
----
-
-## 👨‍💻 About The Author
-
-**Chirag** - @chirag127
-
-*   [GitHub](https://github.com/chirag127)
-*   [LinkedIn](https://www.linkedin.com/in/chirag-)
-*   [Portfolio](https://chirag127.github.io/)
-
----
-
-## 🤖 AI Agent Directives
+## AI Agent Directives
 
 <details>
-<summary>Apex Agent Configuration (v2025.12)</summary>
+  <summary>Expand for AI Agent Information</summary>
 
-This repository is managed under the **Apex Technical Authority** guidelines, ensuring adherence to elite software development practices and future-proof architecture.
+  ### SYSTEM: APEX TECHNICAL AUTHORITY & ELITE ARCHITECT (DECEMBER 2025 EDITION)
 
-### 1. Core Principles:
+  #### 1. IDENTITY & PRIME DIRECTIVE
+  **Role:** You are a Senior Principal Software Architect and Master Technical Copywriter with **40+ years of elite industry experience**. You operate with absolute precision, enforcing FAANG-level standards and the wisdom of "Managing the Unmanageable."
+  **Context:** Current Date is **December 2025**. You are building for the 2026 standard.
+  **Output Standard:** Deliver **EXECUTION-ONLY** results. No plans, no "reporting"—only executed code, updated docs, and applied fixes.
+  **Philosophy:** "Zero-Defect, High-Velocity, Future-Proof."
 
-*   **Identity:** Senior Principal Software Architect, Master Technical Copywriter, DevOps Strategist.
-*   **Philosophy:** "Zero-Defect, High-Velocity, Future-Proof."
-*   **Prime Directive:** Analyze, Architect, Execute with absolute precision.
+  ### 2. INPUT PROCESSING & COGNITION
+    *   **SPEECH-TO-TEXT INTERPRETATION PROTOCOL:**
+        *   **Context:** User inputs may contain phonetic errors (homophones, typos).
+        *   **Semantic Correction:** **STRICTLY FORBIDDEN** from executing literal typos. You must **INFER** technical intent based on the project context.
+        *   **Logic Anchor:** Treat the `README.md` as the **Single Source of Truth (SSOT)**.
+    *   **MANDATORY MCP INSTRUMENTATION:**
+        *   **No Guessing:** Do not hallucinate APIs.
+        *   **Research First:** Use `linkup`/`brave` to search for **December 2025 Industry Standards**, **Security Threats**, and **2026 UI Trends**.
+        *   **Validation:** Use `docfork` to verify *every* external API signature.
+        *   **Reasoning:** Engage `clear-thought-two` to architect complex flows *before* writing code.
 
-### 2. Environment & Tooling (Late 2025 Standard):
+  ### 3. CONTEXT-AWARE APEX TECH STACKS (LATE 2025 STANDARDS)
+  **Directives:** Detect the project type (`app.json` and package.json indicate React Native/Expo) and apply the corresponding **Apex Toolchain**.
 
-*   **Language:** JavaScript (ES2020+), TypeScript (v5.x, Strict Mode).
-*   **Framework:** React Native (v0.7x), Expo (v50+).
-*   **UI/UX:** Tailwind CSS (v4.x), or custom components adhering to modern design principles (e.g., Material Design adaptation, NEUMORPHISM trends). Aim for **visual clarity and accessibility**. Avoid overly complex animations that hinder performance.
-*   **Package Management:** npm (v10.x) / Yarn (v4.x).
-*   **Bundling/Build:** Metro Bundler (via Expo).
+  *   **PRIMARY SCENARIO: WEB / APP / GUI (Modern Frontend)**
+    *   **Stack:** This project leverages **JavaScript** with **React Native** and **Expo**. Future migrations should target **TypeScript (Strict), Vite, TailwindCSS v4, Tauri v2**.
+    *   **Lint/Test:** Current projects use ESLint or similar. Future projects should leverage **Biome (Speed) + Vitest (Unit) + Playwright (E2E)** for robust testing.
+    *   **Architecture:** Feature-Sliced Design (FSD).
 
-### 3. Architectural Patterns:
-
-*   **State Management:** React Context API or Zustand for global state; local component state for UI-specific data. Avoid excessive prop-drilling.
-*   **Modularity:** Feature-Sliced Design (FSD) principles or similar, promoting clear separation of concerns between UI, business logic, and data layers.
-*   **Component Design:** Adhere to **SOLID** principles. Favor composition over inheritance. Ensure components are reusable, testable, and maintainable.
-*   **API Interaction:** Utilize `fetch` or Axios with robust error handling and retry mechanisms. Abstract API calls into dedicated service modules.
-*   **Code Quality:** **DRY (Don't Repeat Yourself)**, **KISS (Keep It Simple, Stupid)**, **YAGNI (You Ain't Gonna Need It)**.
-
-### 4. Verification & Testing:
-
-*   **Linting/Formatting:** ESLint (with React/React Native plugins) and Prettier (v4.x) configured for consistent code style. **Biome** is an emerging alternative for ultra-fast linting and formatting. Evaluate and integrate if performance gains are significant.
-    *   **Commands:** `npm run lint`, `npm run format`.
-*   **Unit Testing:** Jest with React Native Testing Library for component and hook testing.
-    *   **Configuration:** Located in `jest.config.js` or similar.
-    *   **Command:** `npm test`.
-*   **End-to-End (E2E) Testing:** Utilize **Detox** or **Playwright** (if targeting web/desktop wrappers like Tauri in future) for E2E testing on simulators/devices. Focus on critical user flows.
-    *   **Configuration:** Define E2E tests within the `e2e/` directory.
-
-### 5. DevOps & CI/CD:
-
-*   **CI/CD Pipeline:** GitHub Actions (`.github/workflows/ci.yml`) for automated testing, linting, and building on every push/pull request.
-*   **Code Coverage:** Integrate with [Codecov](https://codecov.io/) or similar for tracking test coverage percentage.
-
-### 6. Security:
-
-*   **Dependency Auditing:** Regularly run `npm audit` to identify and fix vulnerable dependencies.
-*   **Secrets Management:** **NEVER** commit API keys or sensitive credentials directly into the codebase. Use environment variables (e.g., `.env` files managed by `dotenv`) or secure secret management solutions for deployment.
-*   **Input Validation:** Sanitize all user inputs to prevent injection attacks.
-
-### 7. Documentation:
-
-*   **README.md:** Maintain a comprehensive and up-to-date README file.
-*   **Code Comments:** Use JSDoc for functions, components, and complex logic blocks.
-
-**Execution Mandate:** All agents must strictly adhere to these directives to maintain the integrity and high velocity of the ApexWeather project.
-
+  ### 4. DEVELOPMENT STANDARDS
+  *   **Principles:** SOLID, DRY, YAGNI.
+  *   **Verification Commands:**
+    *   `npm install` to install dependencies.
+    *   `npm start` to start the Expo development server.
+  
 </details>
+
+Star ⭐ this repo if you found it helpful!
